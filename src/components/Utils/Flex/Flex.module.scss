@@ -1,0 +1,140 @@
+$directions: (row, column);
+
+$wraps: (wrap, nowrap);
+
+$justify: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "space-between": space-between,
+);
+
+$align: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "stretch": stretch,
+);
+
+$flex-grow: 1 2 3 4 5 6 7 8 9 10;
+
+$gaps: (
+  0,
+  1,
+  2,
+  4,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  48,
+  64,
+  72,
+  80,
+  96,
+  128,
+  256,
+  320
+);
+
+$sizes: (
+  "s": 576px,
+  "m": 960px,
+  "l": 1024px,
+  "xl": 1280px,
+);
+
+.container-element {
+  display: flex;
+
+  // Directions
+  @each $dir in $directions {
+    &.#{$dir} {
+      flex-direction: $dir;
+    }
+  }
+
+  // Wraps
+  @each $wrap in $wraps {
+    &.wrap-#{$wrap} {
+      flex-wrap: $wrap;
+    }
+  }
+
+  // Justify
+  @each $name, $value in $justify {
+    &.justify-#{$name} {
+      justify-content: $value;
+    }
+  }
+
+  // Align
+  @each $name, $value in $align {
+    &.align-#{$name} {
+      align-items: $value;
+    }
+  }
+
+  // Flex grow
+  @each $num in $flex-grow {
+    &.flex-#{$num} {
+      flex: $num;
+    }
+  }
+
+  // Gaps
+  @each $gap in $gaps {
+    &.gap-#{$gap} {
+      gap: var(--spacing-#{$gap});
+    }
+  }
+
+  // Responsive
+  @each $device, $size in $sizes {
+    @media (min-width: $size) {
+      @each $dir in $directions {
+        &.#{$device}-direction-#{$dir} {
+          flex-direction: $dir;
+        }
+      }
+
+      @each $wrap in $wraps {
+        &.#{$device}-wrap-#{$wrap} {
+          flex-wrap: $wrap;
+        }
+      }
+
+      @each $name, $value in $justify {
+        &.#{$device}-justify-#{$name} {
+          justify-content: $value;
+        }
+      }
+
+      @each $name, $value in $align {
+        &.#{$device}-align-#{$name} {
+          align-items: $value;
+        }
+      }
+
+      @each $num in $flex-grow {
+        &.#{$device}-flex-#{$num} {
+          flex: $num;
+        }
+      }
+
+      @each $gap in $gaps {
+        &.#{$device}-gap-#{$gap} {
+          gap: var(--spacing-#{$gap});
+        }
+      }
+    }
+  }
+}

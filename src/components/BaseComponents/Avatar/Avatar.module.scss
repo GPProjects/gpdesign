@@ -1,0 +1,28 @@
+.avatar-container {
+  background-size: cover;
+  background-position: center;
+  background-color: var(--avatar-bg);
+
+  &.size-xs {
+    width: var(--spacing-24);
+    height: var(--spacing-24);
+  }
+  &.size-s {
+    width: var(--spacing-32);
+    height: var(--spacing-32);
+  }
+
+  &.size-m {
+    width: var(--spacing-48);
+    height: var(--spacing-48);
+  }
+
+  &.size-l {
+    width: var(--spacing-64);
+    height: var(--spacing-64);
+  }
+  &.size-xl {
+    width: var(--spacing-80);
+    height: var(--spacing-80);
+  }
+}

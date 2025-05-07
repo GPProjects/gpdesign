@@ -1,0 +1,47 @@
+.checkbox-input-toggle {
+  box-sizing: border-box;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: var(--switch-border-radius);
+  background-color: var(--switch-bg);
+  &.selected {
+    background-color: var(--color-success200);
+  }
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-2);
+  transition: background 0.3s;
+  outline: none;
+
+  &:focus,
+  &:active,
+  &:focus-visible,
+  &:focus-within {
+    box-shadow: var(--shadow-focus);
+  }
+  &.disabled {
+    pointer-events: none;
+    background-color: var(--switch-bg-disabled);
+    &.selected {
+      background-color: var(--color-disabled);
+    }
+  }
+}
+
+.circle-toggle {
+  box-sizing: border-box;
+  width: var(--switch-circle-width);
+  height: var(--switch-circle-height);
+  background: var(--switch-circle-bg);
+  border-radius: var(--radius-max);
+  position: absolute;
+  left: var(--switch-circle-left);
+  &.selected {
+    left: var(--switch-circle-left-selected);
+  }
+  transition: left 0.3s;
+  box-shadow: var(--switch-circle-box-shadow);
+}

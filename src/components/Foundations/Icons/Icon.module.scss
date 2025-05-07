@@ -1,0 +1,14 @@
+.icon-element {
+  // Size variants
+  &.size-s {
+    font-size: var(--spacing-12);
+  }
+
+  &.size-m {
+    font-size: var(--spacing-16);
+  }
+
+  &.size-l {
+    font-size: var(--spacing-20);
+  }
+}

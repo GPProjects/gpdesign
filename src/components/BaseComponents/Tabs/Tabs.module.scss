@@ -1,0 +1,55 @@
+.tabs-wrapper {
+  &.disabled {
+    pointer-events: none;
+    cursor: none;
+    opacity: 0.6;
+  }
+}
+.tab-item {
+  font-size: var(--tabs-font-size-m);
+  font-weight: var(--tabs-font-weight);
+  color: var(--tabs-color);
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+
+  &.size-s {
+    padding: var(--tabs-padding-s);
+    font-size: var(--tabs-font-size-s);
+  }
+
+  &.size-m {
+    padding: var(--tabs-padding-m);
+    font-size: var(--tabs-font-size-m);
+  }
+
+  &.active {
+    color: var(--color-accent200);
+  }
+  &.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: none;
+  }
+  .number {
+    margin-left: var(--tabs-number-margin-left);
+  }
+}
+
+.underline {
+  display: block;
+  width: 100%;
+  height: var(--tabs-underline-height);
+  border-bottom: var(--tabs-border-bottom);
+  background-color: var(--tabs-underline-bg-color);
+  &.active {
+    height: var(--tabs-underline-active-height);
+    border-bottom: var(--tabs-underline-active-border-bottom);
+    background-color: var(--tabs-underline-active-bg-color);
+  }
+}

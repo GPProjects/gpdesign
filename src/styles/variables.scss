@@ -1,0 +1,70 @@
+$borders: (
+  "100": "border100",
+  "200": "border200",
+  "300": "border300",
+  "default": "text-default",
+  "muted": "text-muted",
+  "danger": "danger200",
+  "success": "success200",
+  "warning": "warning200",
+  "info": "info200",
+);
+
+$positions: ("relative", "absolute", "sticky", "fixed");
+
+$widths: (
+  "full": 100vw,
+  "100": 100%,
+  "fit-content": fit-content,
+  "auto": auto,
+);
+
+$heights: (
+  "full": 100vh,
+  "100": 100%,
+  "fit-content": fit-content,
+  "auto": auto,
+);
+
+$spaces: 0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 48, 64, 72,
+  80, 96, 128, 256, 320;
+
+$radiuses: ("xxs", "xs", "s", "m", "l", "xl", "max");
+
+$shadows: ("xs", "s", "m", "l", "xl", "2xl", "3xl", "focus");
+
+$colors: (
+  "accent100",
+  "accent200",
+  "accent300",
+  "border100",
+  "border200",
+  "border300",
+  "danger100",
+  "danger200",
+  "danger300",
+  "info100",
+  "info200",
+  "info300",
+  "success100",
+  "success200",
+  "success300",
+  "warning100",
+  "warning200",
+  "warning300",
+  "white",
+  "text-default",
+  "text-muted",
+  "bg-disabled",
+  "bg-white",
+  "bg-hover",
+  "disabled",
+  "black"
+);
+
+$sizes: (
+  "s": 576px,
+  "m": 960px,
+  "l": 1024px,
+  "xl": 1280px,
+);

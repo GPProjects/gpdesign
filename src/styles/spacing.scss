@@ -1,0 +1,90 @@
+@use "./variables.scss";
+
+.gp {
+  @each $space in variables.$spaces {
+    &-m-#{$space} {
+      margin: var(--spacing-#{$space});
+    }
+    &-mt-#{$space},
+    &-my-#{$space} {
+      margin-top: var(--spacing-#{$space});
+    }
+    &-mb-#{$space},
+    &-my-#{$space} {
+      margin-bottom: var(--spacing-#{$space});
+    }
+    &-ml-#{$space},
+    &-mx-#{$space} {
+      margin-left: var(--spacing-#{$space});
+    }
+    &-mr-#{$space},
+    &-mx-#{$space} {
+      margin-right: var(--spacing-#{$space});
+    }
+
+    &-p-#{$space} {
+      padding: var(--spacing-#{$space});
+    }
+    &-pt-#{$space},
+    &-py-#{$space} {
+      padding-top: var(--spacing-#{$space});
+    }
+    &-pb-#{$space},
+    &-py-#{$space} {
+      padding-bottom: var(--spacing-#{$space});
+    }
+    &-pl-#{$space},
+    &-px-#{$space} {
+      padding-left: var(--spacing-#{$space});
+    }
+    &-pr-#{$space},
+    &-px-#{$space} {
+      padding-right: var(--spacing-#{$space});
+    }
+  }
+  @each $name, $size in variables.$sizes {
+    @media only screen and (min-width: $size) {
+      @each $space in variables.$spaces {
+        &-#{$name}-m-#{$space} {
+          margin: var(--spacing-#{$space});
+        }
+        &-#{$name}-mt-#{$space},
+        &-#{$name}-my-#{$space} {
+          margin-top: var(--spacing-#{$space});
+        }
+        &-#{$name}-mb-#{$space},
+        &-#{$name}-my-#{$space} {
+          margin-bottom: var(--spacing-#{$space});
+        }
+        &-#{$name}-ml-#{$space},
+        &-#{$name}-mx-#{$space} {
+          margin-left: var(--spacing-#{$space});
+        }
+        &-#{$name}-mr-#{$space},
+        &-#{$name}-mx-#{$space} {
+          margin-right: var(--spacing-#{$space});
+        }
+
+        &-#{$name}-p-#{$space} {
+          padding: var(--spacing-#{$space});
+        }
+        &-#{$name}-pt-#{$space},
+        &-#{$name}-py-#{$space} {
+          padding-top: var(--spacing-#{$space});
+        }
+        &-#{$name}-pb-#{$space},
+        &-#{$name}-py-#{$space} {
+          padding-bottom: var(--spacing-#{$space});
+        }
+        &-#{$name}-pl-#{$space},
+        &-#{$name}-px-#{$space} {
+          padding-left: var(--spacing-#{$space});
+        }
+        &-#{$name}-pr-#{$space},
+        &-#{$name}-px-#{$space} {
+          padding-right: var(--spacing-#{$space});
+        }
+      }
+    }
+  }
+}

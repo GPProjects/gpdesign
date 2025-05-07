@@ -1,0 +1,200 @@
+:root {
+  --font-default: "Inter", Helvetica, Arial, sans-serif;
+  /* COLORS */
+  --color-accent100: #e5fdfb;
+  --color-accent200: #016056;
+  --color-accent300: #003934;
+  --color-border100: #e0dede;
+  --color-border200: #ababab;
+  --color-border300: #555555;
+  --color-danger100: #fed9dd;
+  --color-danger200: #d0260f;
+  --color-danger300: #891000;
+  --color-info100: #cde5ff;
+  --color-info200: #005ec2;
+  --color-info300: #004895;
+  --color-success100: #defee8;
+  --color-success200: #018642;
+  --color-success300: #005e1f;
+  --color-warning100: #ffead1;
+  --color-warning200: #b35f00;
+  --color-warning300: #8a4300;
+  --color-white: #ffffff;
+  --color-text-default: #222222;
+  --color-text-muted: #615e5e;
+  --color-bg-white: #ffffff;
+  --color-bg-hover: #efefef;
+  --color-bg-disabled: #f3f3f3;
+  --color-disabled: #818080;
+  --color-black: #000;
+
+  /* SPACING */
+  --spacing-0: 0rem;
+  --spacing-1: 0.0625rem;
+  --spacing-2: 0.125rem;
+  --spacing-4: 0.25rem;
+  --spacing-6: 0.375rem;
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-14: 0.875rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-28: 1.75rem;
+  --spacing-32: 2rem;
+  --spacing-36: 2.25rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-64: 4rem;
+  --spacing-72: 4.5rem;
+  --spacing-80: 5rem;
+  --spacing-96: 6rem;
+  --spacing-128: 8rem;
+  --spacing-256: 16rem;
+  --spacing-320: 20rem;
+
+  /* RADIUS */
+  --radius-xxs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-s: 0.5rem;
+  --radius-m: 1rem;
+  --radius-l: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-max: 100%;
+
+  /* SHADOWS */
+  --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-s: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  --shadow-m: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  --shadow-l: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 16px 32px rgba(0, 0, 0, 0.15);
+  --shadow-3xl: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 24px 48px rgba(0, 0, 0, 0.15);
+  --shadow-focus: 0px 0px 0px 2px rgba(0, 121, 150, 0.4);
+
+  // ELEMENTS STYLES
+  // Accordion
+  --accordion-bg: var(--color-bg-white);
+  --accordion-bg-hover: var(--color-bg-hover);
+  --accordion-border-radius: var(--radius-l);
+  --accordion-border: 1px solid var(--color-border100);
+  --accordion-padding-content: var(--spacing-16);
+  --accordion-padding-header: var(--spacing-8) var(--spacing-16);
+  --accordion-font-size: var(--spacing-16);
+  --accordion-font-weight: 600;
+
+  // Alert
+  --alert-gap: var(--spacing-8);
+  --alert-padding: var(--spacing-10);
+  --alert-border-radius: var(--radius-s);
+  --alert-font-size: var(--spacing-16);
+  --alert-font-size-caption: var(--spacing-14);
+
+  // Avatar
+  --avatar-bg: #f7f7f7;
+
+  // Button
+  --button-gap: var(--spacing-8);
+  --button-s-padding: var(--spacing-4) var(--spacing-14);
+  --button-m-padding: var(--spacing-8) var(--spacing-20);
+  --button-l-padding: var(--spacing-10) var(--spacing-24);
+  --button-s-font-size: var(--spacing-12);
+  --button-m-font-size: var(--spacing-16);
+  --button-l-font-size: var(--spacing-20);
+  --button-s-radius: var(--radius-s);
+  --button-m-radius: var(--radius-m);
+  --button-l-radius: var(--radius-m);
+  --button-s-only-icon-padding: var(--spacing-8);
+  --button-m-only-icon-padding: var(--spacing-8);
+  --button-l-only-icon-padding: var(--spacing-8);
+  --button-font-weight: 400;
+  --button-border-width: 2px;
+
+  // Checkbox & Radio
+  --checkbox-radio-gap: var(--spacing-8);
+
+  // Divider
+  --divider-bg: var(--color-border100);
+  --divider-margin: var(--spacing-8);
+
+  // Hint
+  --hint-gap: var(--spacing-8);
+
+  // Inputs (TextField, TextArea, InputSearch, Select)
+  --input-gap: var(--spacing-8);
+  --input-padding: var(--spacing-8) var(--spacing-16);
+  --input-padding-select: var(--spacing-16);
+  --input-text-area: var(--spacing-16);
+  --input-font-size: var(--spacing-16);
+  --input-border-radius: var(--radius-m);
+  --input-border-width: 1px;
+  --input-search-padding-x: var(--spacing-36);
+
+  // List item
+  --list-item-bg: var(--color-bg-white);
+  --list-item-hover: var(--color-bg-hover);
+  --list-item-padding: var(--spacing-8);
+  --list-item-border-radius: var(--radius-xs);
+  --list-item-border-width: 1px;
+
+  // Switch
+  --switch-width: var(--spacing-48);
+  --switch-height: var(--spacing-24);
+  --switch-border-radius: var(--radius-m);
+  --switch-bg: var(--color-border100);
+  --switch-bg-disabled: var(--color-bg-disabled);
+  --switch-circle-width: var(--spacing-20);
+  --switch-circle-height: var(--spacing-20);
+  --switch-circle-bg: var(--color-bg-white);
+  --switch-circle-box-shadow: var(--shadow-xs);
+  --switch-circle-left-selected: calc(100% - 22px);
+  --switch-circle-left: 2px;
+
+  // Tabs
+  --tabs-padding-s: var(--spacing-8);
+  --tabs-font-size-s: var(--spacing-14);
+  --tabs-padding-m: var(--spacing-16);
+  --tabs-font-size-m: var(--spacing-16);
+  --tabs-font-weight: 600;
+  --tabs-color: var(--color-text-muted);
+  --tabs-number-margin-left: var(--spacing-8);
+  --tabs-underline-height: 2px;
+  --tabs-border-bottom: 1px solid var(--color-border100);
+  --tabs-underline-bg-color: transparent;
+  --tabs-underline-active-height: 2px;
+  --tabs-underline-active-border-bottom: 1px solid var(--color-accent200);
+  --tabs-underline-active-bg-color: var(--color-accent200);
+
+  // Tag
+  --tag-padding-xs: var(--spacing-2) var(--spacing-8);
+  --tag-padding-s: var(--spacing-4) var(--spacing-8);
+  --tag-padding-m: var(--spacing-4) var(--spacing-8);
+  --tag-padding-l: var(--spacing-4) var(--spacing-16);
+  --tag-font-size-xs: var(--spacing-12);
+  --tag-font-size-s: var(--spacing-12);
+  --tag-font-size-m: var(--spacing-14);
+  --tag-font-size-l: var(--spacing-16);
+  --tag-border-radius: var(--radius-m);
+  --tag-border-width: 1px;
+  --tag-gap: var(--spacing-8);
+  --tag-custom-bg-color-primary: #d1006a;
+  --tag-custom-border-color-primary: #d1006a;
+  --tag-custom-border-color-secondary: #d1006a;
+
+  // Toast
+  --toast-gap: var(--spacing-8);
+  --toast-padding-s: var(--spacing-8);
+  --toast-padding-m: var(--spacing-10);
+  --toast-border-radius: var(--radius-s);
+  --toast-border-width: 1px;
+  --toast-box-shadow: var(--shadow-m);
+  --toast-font-size-s: var(--spacing-14);
+  --toast-font-size-m: var(--spacing-16);
+}

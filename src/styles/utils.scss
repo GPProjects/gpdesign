@@ -1,0 +1,57 @@
+@use "./variables.scss";
+
+.gp {
+  // Border
+  @each $name, $color in variables.$borders {
+    &-border-#{$name} {
+      border: 1px solid var(--color-#{$color});
+    }
+  }
+
+  // Position
+  @each $pos in variables.$positions {
+    &-position-#{$pos} {
+      position: #{$pos};
+    }
+  }
+
+  // Width
+  @each $width, $value in variables.$widths {
+    &-w-#{$width} {
+      width: $value;
+    }
+  }
+
+  // Height
+  @each $height, $value in variables.$heights {
+    &-h-#{$height} {
+      height: $value;
+    }
+  }
+
+  // Responsive
+  @each $device, $size in variables.$sizes {
+    @media (min-width: $size) {
+      @each $name, $color in variables.$borders {
+        &-#{$device}-border-#{$name} {
+          border: 1px solid var(--color-#{$color});
+        }
+      }
+      @each $pos in variables.$positions {
+        &-#{$device}-position-#{$pos} {
+          position: #{$pos};
+        }
+      }
+      @each $width, $value in variables.$widths {
+        &-#{$device}-w-#{$width} {
+          width: $value;
+        }
+      }
+      @each $height, $value in variables.$heights {
+        &-#{$device}-h-#{$height} {
+          height: $value;
+        }
+      }
+    }
+  }
+}

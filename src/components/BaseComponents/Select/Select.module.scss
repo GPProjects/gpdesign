@@ -1,0 +1,101 @@
+.select-wrapper {
+  box-sizing: border-box;
+  font-family: var(--font-default);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--input-gap);
+  width: 100%;
+  color: var(--color-text-default);
+}
+
+.select-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.placeholder-select {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: var(--input-padding-select);
+  pointer-events: none;
+}
+
+.arrowicon-select {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--input-padding-select);
+}
+
+.select-input {
+  box-sizing: border-box;
+  appearance: none; /* Nasconde la freccia predefinita */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  font-family: var(--font-default);
+  font-size: var(--input-font-size);
+  width: 100%;
+  padding: var(--input-padding-select);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-border100);
+  outline: none;
+  border-radius: var(--input-border-radius);
+  color: var(--color-text-default);
+
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:-webkit-autofill {
+    box-shadow: var(--shadow-focus);
+  }
+
+  &.danger {
+    border-color: var(--color-danger200);
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:-webkit-autofill {
+      border-color: var(--color-danger200);
+    }
+  }
+
+  &.warning {
+    border-color: var(--color-warning200);
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:-webkit-autofill {
+      border-color: var(--color-warning200);
+    }
+  }
+
+  &.success {
+    border-color: var(--color-success200);
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:-webkit-autofill {
+      border-color: var(--color-success200);
+    }
+  }
+
+  &.info {
+    border-color: var(--color-info200);
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:-webkit-autofill {
+      border-color: var(--color-info200);
+    }
+  }
+
+  &.disabled {
+    color: var(--color-disabled);
+    border-color: var(--color-border100);
+    background-color: var(--color-bg-disabled);
+  }
+}

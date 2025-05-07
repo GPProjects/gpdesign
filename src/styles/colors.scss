@@ -1,0 +1,25 @@
+@use "./variables.scss";
+
+.gp {
+  @each $color in variables.$colors {
+    &-bg-#{$color} {
+      background-color: var(--color-#{$color});
+    }
+    &-color-#{$color} {
+      color: var(--color-#{$color});
+    }
+  }
+
+  @each $name, $size in variables.$sizes {
+    @media (min-width: $size) {
+      @each $color in variables.$colors {
+        &-#{$name}-bg-#{$color} {
+          background-color: var(--color-#{$color});
+        }
+        &-#{$name}-color-#{$color} {
+          color: var(--color-#{$color});
+        }
+      }
+    }
+  }
+}

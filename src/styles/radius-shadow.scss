@@ -1,0 +1,33 @@
+@use "./variables.scss";
+
+.gp {
+  // Radius
+  @each $radius in variables.$radiuses {
+    &-radius-#{$radius} {
+      border-radius: var(--radius-#{$radius});
+    }
+  }
+
+  // Shadow
+  @each $shadow in variables.$shadows {
+    &-shadow-#{$shadow} {
+      box-shadow: var(--shadow-#{$shadow});
+    }
+  }
+
+  // Responsive
+  @each $name, $size in variables.$sizes {
+    @media (min-width: $size) {
+      @each $radius in variables.$radiuses {
+        &-#{$name}-radius-#{$radius} {
+          border-radius: var(--radius-#{$radius});
+        }
+      }
+      @each $shadow in variables.$shadows {
+        &-#{$name}-shadow-#{$shadow} {
+          box-shadow: var(--shadow-#{$shadow});
+        }
+      }
+    }
+  }
+}

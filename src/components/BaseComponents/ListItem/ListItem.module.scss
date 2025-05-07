@@ -1,0 +1,28 @@
+.list-item-container {
+  padding: var(--list-item-padding);
+  border-radius: var(--list-item-border-radius);
+  border-width: var(--list-item-border-width);
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--list-item-bg);
+  &:hover {
+    background-color: var(--list-item-hover);
+  }
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.selected {
+    box-shadow: var(--shadow-focus);
+    outline: none;
+  }
+  &.disabled {
+    opacity: 0.6;
+    cursor: none;
+    pointer-events: none;
+  }
+}
+
+a.list-item-container {
+  text-decoration: none;
+}

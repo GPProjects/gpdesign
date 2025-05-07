@@ -1,0 +1,89 @@
+{
+  "name": "gpdesign",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "type": "module",
+  "main": "dist/gpdesign.umd.js",
+  "module": "dist/gpdesign.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gpdesign.es.js",
+      "require": "./dist/gpdesign.umd.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./dist/index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    },
+    "./styles": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
+  },
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build:types": "tsc",
+    "build:vite": "vite build",
+    "build": "npm run build:vite && npm run build:types",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "publish:patch": "npm run build && npm version patch && npm publish",
+    "publish:minor": "npm run build && npm version minor && npm publish",
+    "publish:major": "npm run build && npm version major && npm publish",
+    "publish:beta": "npm run build && npm version prerelease --preid=beta && npm publish --tag beta"
+  },
+  "keywords": [],
+  "author": "Giulia Puntoni <giuliapuntoni@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@storybook/addon-essentials": "8.6.9",
+    "@storybook/addon-interactions": "8.6.9",
+    "@storybook/blocks": "8.6.9",
+    "@storybook/builder-vite": "8.6.9",
+    "@storybook/react": "8.6.9",
+    "@storybook/react-vite": "8.6.9",
+    "@storybook/test": "8.6.9",
+    "@types/node": "^22.13.1",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-storybook": "^0.11.2",
+    "sass": "^1.86.3",
+    "sass-embedded": "^1.86.3",
+    "storybook": "8.6.9",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "sideEffects": false
+}
