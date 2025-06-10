@@ -65,8 +65,8 @@ export const Spacing = () => {
     name,
     value,
   }));
-  const copyToClipboardPriority = (text: string) => {
-    navigator.clipboard.writeText(`PRIORITY.${text}`);
+  const copyToClipboardTheme = (text: string) => {
+    navigator.clipboard.writeText(`THEME.${text}`);
   };
 
   return (
@@ -109,11 +109,11 @@ export const Spacing = () => {
       </Flex>
       <HeadingSmall>THEME</HeadingSmall>
       <Flex gap={SPACING.SP_20} className="gp-pb-20">
-        {THEME_ARRAY.map((el) => (
-          <Flex
-            gap={SPACING.SP_10}
-            align="center"
-            onClick={() => copyToClipboardPriority(el.name)}
+          {THEME_ARRAY.map((el) => (
+            <Flex
+              gap={SPACING.SP_10}
+              align="center"
+              onClick={() => copyToClipboardTheme(el.name)}
             style={{
               cursor: "pointer",
             }}
@@ -121,7 +121,7 @@ export const Spacing = () => {
             border="100"
             className="gp-p-10"
           >
-            <Body>PRIORITY.{el.name}</Body>
+              <Body>THEME.{el.name}</Body>
           </Flex>
         ))}
       </Flex>

@@ -97,8 +97,8 @@ del componente [\`Icon\`](?path=/docs/foundations-icons--docs).
 - **iconRightType** *(string, opzionale)*:  Tipo di stile del componente Icon. 
 - **id** *(string, opzionale)*: Imposta l'ID del tag.
 - **theme** *(string, opzionale)*: Imposta lo stile del tag. Può essere una delle seguenti opzioni documentate [qui](?path=/docs/foundations-constants--docs):
-  - \`PRIORITY.PRIMARY\`
-  - \`PRIORITY.SECONDARY\`
+  - \`THEME.PRIMARY\`
+  - \`THEME.SECONDARY\`
 - **size** *(string, opzionale)*: La dimensione del tag. Può assumere uno dei seguenti valori documentati [qui](?path=/docs/foundations-constants--docs):
   - \`SIZES.XS\`
   - \`SIZES.S\`
