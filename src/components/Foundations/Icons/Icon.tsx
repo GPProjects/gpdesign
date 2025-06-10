@@ -51,7 +51,6 @@ const Icon = (props: IconProps) => {
     case "regular":
       icon = iconRegular;
       break;
-      break;
     case "brands":
       icon = iconBrand;
       break;

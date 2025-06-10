@@ -31,7 +31,7 @@ export const SPACING_VALUES = {
   SP_1: "0.0625rem", // 1px
   SP_2: "0.125rem", // 2px
   SP_4: "0.25rem", // 4px
-  SP_6: "0.375", // 6px
+  SP_6: "0.375rem", // 6px
   SP_8: "0.5rem", // 8px
   SP_10: "0.625rem", // 10px
   SP_12: "0.75rem", // 12px
