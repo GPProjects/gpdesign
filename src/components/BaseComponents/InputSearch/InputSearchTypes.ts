@@ -1,6 +1,5 @@
 import React from "react";
 import { STATUS } from "../../../constants/const";
-import { HintProps } from "../Hint/HintTypes";
 
 export interface InputSearchProps {
   caption?: React.ReactNode;

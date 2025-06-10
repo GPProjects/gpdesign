@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Tabs from "./Tabs";
 import { SIZES } from "../../../constants/const";
-import { TabsItem, TabsProps } from "./Tabs.types";
+import { TabsProps } from "./Tabs.types";
 
 const meta: Meta<typeof Tabs> = {
   title: "Base Components/Tabs",
@@ -70,7 +70,7 @@ Il componente \`Tabs\` permette di gestire interfacce con contenuti suddivisi in
 - \`aria-controls\` è usato per associare il tab al suo pannello.
 - \`aria-disabled\` è usato per disabilitare i tab disabilitati e anche per segnalare il wrapper disabilitato.
 
-⚠️ **NB:** \`role="tabpanel"\` e \`aria-labelledby\ devono essere assegnati al contenuto della pagina gesito dai tab.
+⚠️ **NB:** \`role="tabpanel"\` e \`aria-labelledby\` devono essere assegnati al contenuto della pagina gesito dai tab.
 
 ### 🔧 Proprietà principali
 

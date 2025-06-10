@@ -165,7 +165,7 @@ export const WithErrorAndHint = ({ ...args }: RadioboxProps) => (
 
 WithErrorAndHint.args = {
   children: "Radiobox",
-  hint: "Hint Messagge",
+  hint: "Hint Message",
   error: true,
   id: "radiobox-id-4",
 };

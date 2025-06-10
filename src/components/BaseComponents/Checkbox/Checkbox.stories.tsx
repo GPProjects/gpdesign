@@ -167,7 +167,7 @@ export const WithErrorAndHint = ({ ...args }: CheckboxProps) => (
 
 WithErrorAndHint.args = {
   children: "Checkbox",
-  hint: "Hint Messagge",
+  hint: "Hint Message",
   error: true,
   id: "checkbox-4",
 };

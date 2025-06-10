@@ -42,7 +42,7 @@ const Switch = (props: SwitchProps) => {
     .filter(Boolean)
     .join(" ");
 
-  const cirlceClassNames = [
+  const circleClassNames = [
     "gp-circle-toggle",
     styles["circle-toggle"],
     selected && styles["selected"],
@@ -63,7 +63,7 @@ const Switch = (props: SwitchProps) => {
       onClick={onSwitchChange}
       {...otherProps}
     >
-      <span className={cirlceClassNames} />
+      <span className={circleClassNames} />
     </button>
   );
 };

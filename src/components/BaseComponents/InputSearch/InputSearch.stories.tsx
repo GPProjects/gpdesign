@@ -1,5 +1,5 @@
 import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta } from "@storybook/react";
 import InputSearch from "./InputSearch";
 import { STATUS } from "../../../constants/const";
 import { InputSearchProps } from "./InputSearchTypes";

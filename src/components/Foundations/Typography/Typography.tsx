@@ -21,7 +21,7 @@ const createTypographyComponent = (
 ) => {
   const variant = TYPOGRAPHY_VARIANTS[variantKey];
 
-  const TypographyComponent = React.memo(({ type, ...props }: TextProps) => {
+  const TypographyComponent = React.memo(({ ...props }: TextProps) => {
     return <Text type={variant} {...props} />;
   });
 

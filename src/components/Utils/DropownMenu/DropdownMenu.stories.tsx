@@ -60,7 +60,7 @@ const meta: Meta<typeof DropdownMenu> = {
         component: `
 Il componente **DropdownMenu** mostra un menu a tendina personalizzabile.
 
-➡️ **La prop \`header\` è obbligatoria per gestire l'apertura del menu. Deve possedere la prop le prop \`aria-haspopup="menu"\` e \`aria-expanded={open}\`. (vedi accessibilità)*. <br>
+➡️ **La prop \`header\` è obbligatoria per gestire l'apertura del menu. Deve possedere le prop \`aria-haspopup="menu"\` e \`aria-expanded={open}\`. (vedi accessibilità)*. <br>
 
 ## ♿️ Accessibilità
 - \`role="menu\` associato al wrapper dei del menu.

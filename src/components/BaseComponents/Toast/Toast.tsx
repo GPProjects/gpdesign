@@ -4,7 +4,7 @@ import { Body } from "../../Foundations/Typography/Typography";
 import Icon from "../../Foundations/Icons/Icon";
 import styles from "./Toast.module.scss";
 import { Row } from "../../Utils/Flex/FlexContainers";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const Toast = (props: ToastProps) => {
   const {
@@ -31,14 +31,16 @@ const Toast = (props: ToastProps) => {
   const [closing, setClosing] = useState(false);
 
   // Handlers
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     if (closing) return;
     setClosing(true);
     setTimeout(() => {
       setOpen(false);
-      onClose && onClose();
+      if (onClose) {
+        onClose();
+      }
     }, 500);
-  };
+  }, [closing, onClose]);
 
   // Effects
   useEffect(() => {
@@ -57,7 +59,7 @@ const Toast = (props: ToastProps) => {
         timeoutRef.current = null;
       }
     };
-  }, [isOpen, automaticClose]);
+  }, [isOpen, automaticClose, handleClose]);
 
   // Styling
   let icon = "faCircleInfo";

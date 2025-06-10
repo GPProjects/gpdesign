@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react";
 import Avatar from "./Avatar";
-import { SIZES, STATUS } from "../../../constants/const";
+import { SIZES } from "../../../constants/const";
 import { AvatarProps } from "./AvatarTypes";
 
 const meta: Meta<typeof Avatar> = {

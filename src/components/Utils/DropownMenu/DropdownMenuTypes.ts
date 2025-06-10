@@ -4,7 +4,7 @@ export interface DropdownMenuProps {
   debugMode?: boolean;
   id?: string;
   isOpen?: boolean;
-  handleClose?: () => void;
+  onClose?: () => void;
   automaticClose?: boolean;
   header: () => React.ReactNode;
   position?: "bottom" | "right" | "left" | "top";

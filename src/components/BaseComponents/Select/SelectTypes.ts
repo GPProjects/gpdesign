@@ -1,5 +1,4 @@
 import { STATUS } from "../../../constants/const";
-import { HintProps } from "../Hint/HintTypes";
 
 export interface Option {
   label: string;

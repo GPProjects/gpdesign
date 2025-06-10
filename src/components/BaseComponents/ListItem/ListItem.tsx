@@ -74,7 +74,7 @@ const ListItem = (props: ListItemProps) => {
       }
       {...otherProps}
     >
-      {icon && <Icon iconName={icon} color={colorIcon} />}
+      {icon && <Icon iconName={icon} color={colorIcon} type={iconType} />}
       <Column>
         <BodySmall
           tag={typeof children === "string" ? "p" : "div"}
