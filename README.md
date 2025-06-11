@@ -43,21 +43,21 @@ Reusable UI elements, including:
 1. Install the package:
 
 ```bash
-npm install gp-design
+npm install gpdesign
 # or
-yarn add gp-design
+yarn add gpdesign
 ```
 
 2. Import the global CSS file (required):
 
 ```ts
-import "gp-design/dist/index.css";
+import "gpdesign/dist/index.css";
 ```
 
 3. Use the components:
 
 ```tsx
-import { Button } from "gp-design";
+import { Button } from "gpdesign";
 
 <Button label="Click me" onClick={() => console.log("Clicked")} />;
 ```
