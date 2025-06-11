@@ -36,6 +36,7 @@ import Avatar from "./components/BaseComponents/Avatar/Avatar";
 import Button from "./components/BaseComponents/Button/Button";
 import Checkbox from "./components/BaseComponents/Checkbox/Checkbox";
 import Divider from "./components/BaseComponents/Divider/Divider";
+import Dialog from "./components/BaseComponents/Dialog/Dialog";
 import Hint from "./components/BaseComponents/Hint/Hint";
 import InputSearch from "./components/BaseComponents/InputSearch/InputSearch";
 import ListItem from "./components/BaseComponents/ListItem/ListItem";
@@ -81,6 +82,7 @@ export {
   Button,
   Hint,
   Checkbox,
+  Dialog,
   Divider,
   InputSearch,
   ListItem,

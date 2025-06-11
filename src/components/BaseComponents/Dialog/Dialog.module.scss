@@ -1,0 +1,21 @@
+.dialog-container {
+  width: 100%;
+  border: 1px solid var(--color-border100);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-md);
+  .icon-close {
+    cursor: pointer;
+  }
+  // Size variants
+  &.size-s {
+    max-width: 370px;
+  }
+
+  &.size-m {
+    max-width: 800px;
+  }
+
+  &.size-l {
+    max-width: 1024px;
+  }
+}
