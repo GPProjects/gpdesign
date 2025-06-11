@@ -23,6 +23,7 @@
   transform: translateY(-50%);
   padding-left: var(--input-gap);
   pointer-events: none;
+  left: var(--input-gap);
 }
 
 .icon-right-search {
@@ -30,5 +31,5 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: var(--input-gap);
+  right: 1rem;
 }
