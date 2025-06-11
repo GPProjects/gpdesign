@@ -41,11 +41,6 @@ const Tag = (props: TagProps) => {
     <div id={id} className={classNames} data-testid={id} {...otherProps}>
       {iconLeft && (
         <Icon
-          color={
-            theme === THEME.PRIMARY
-              ? COLORS.white
-              : status && COLORS[`${status}200`]
-          }
           iconName={iconLeft}
           className={styles["icon-custom"]}
           type={iconLeftType}
@@ -56,21 +51,11 @@ const Tag = (props: TagProps) => {
       <Text
         tag={typeof children === "string" ? "p" : "div"}
         weight={size === SIZES.M ? "700" : size === SIZES.XS ? "400" : "600"}
-        color={
-          theme === THEME.PRIMARY
-            ? COLORS.white
-            : status && COLORS[`${status}200`]
-        }
       >
         {children}
       </Text>
       {iconRight && (
         <Icon
-          color={
-            theme === THEME.PRIMARY
-              ? COLORS.white
-              : status && COLORS[`${status}200`]
-          }
           iconName={iconRight}
           className={styles["icon-custom"]}
           type={iconRightType}
