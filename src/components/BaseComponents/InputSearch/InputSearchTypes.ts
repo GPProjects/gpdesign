@@ -7,6 +7,7 @@ export interface InputSearchProps {
   debugMode?: boolean;
   error?: boolean;
   handleChange?: (value: string) => void;
+  handleReset?: () => void;
   hint?: React.ReactNode;
   hintShowIcon?: boolean;
   hintStatus?: STATUS;

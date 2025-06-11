@@ -14,6 +14,7 @@ const InputSearch = (props: InputSearchProps) => {
     debugMode,
     error,
     handleChange,
+    handleReset,
     hint,
     hintShowIcon,
     hintStatus,
@@ -74,6 +75,9 @@ const InputSearch = (props: InputSearchProps) => {
     }
     if (onSubmit) {
       onSubmit("");
+    }
+    if (handleReset) {
+      handleReset();
     }
   };
 
