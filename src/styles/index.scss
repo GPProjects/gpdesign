@@ -153,3 +153,7 @@
 .gp-cursor-pointer {
   cursor: pointer;
 }
+
+body.overlay-open {
+  overflow: hidden;
+}
