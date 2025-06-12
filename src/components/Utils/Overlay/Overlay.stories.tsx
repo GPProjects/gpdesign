@@ -71,7 +71,7 @@ export const ExternalOpen = ({ ...args }: OverlayProps) => {
   return (
     <div style={{}}>
       <Button onClick={() => setOpen(true)}>Trigger for open Overlay</Button>
-      <Overlay {...args} isOpen={open} onClose={() => setOpen(false)} />
+      <Overlay {...args} isOpen={open} />
     </div>
   );
 };

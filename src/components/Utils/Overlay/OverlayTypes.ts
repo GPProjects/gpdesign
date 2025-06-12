@@ -4,6 +4,4 @@ export interface OverlayProps {
   debugMode?: boolean;
   id?: string;
   isOpen?: boolean;
-  closeOnClick?: boolean;
-  onClose?: () => void;
 }

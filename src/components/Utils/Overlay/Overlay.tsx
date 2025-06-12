@@ -9,8 +9,6 @@ const Overlay = (props: OverlayProps) => {
     id,
     debugMode,
     isOpen = false,
-    closeOnClick = true,
-    onClose,
     ...otherProps
   } = props;
 
@@ -53,11 +51,6 @@ const Overlay = (props: OverlayProps) => {
     }
   }, []);
 
-  const handleClose = () => {
-    closeOnClick && setOpen((prevState) => !prevState);
-    onClose && onClose();
-  };
-
   // Styles
   const wrapperClassNames = [
     "sv-overlay",
@@ -69,13 +62,7 @@ const Overlay = (props: OverlayProps) => {
     .join(" ");
 
   return (
-    <div
-      className={wrapperClassNames}
-      id={id}
-      data-testid={id}
-      onClick={handleClose}
-      {...otherProps}
-    >
+    <div className={wrapperClassNames} id={id} data-testid={id} {...otherProps}>
       {children}
     </div>
   );
