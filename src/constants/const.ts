@@ -38,10 +38,10 @@ export const RADIUS = {
 export type RADIUS = (typeof RADIUS)[keyof typeof RADIUS];
 
 export const SHADOWS = {
-  SM: "sm",
-  NORMAL: "normal",
-  MD: "md",
-  LG: "lg",
+  XS: "xs",
+  S: "s",
+  M: "m",
+  L: "l",
   XL: "xl",
   "2XL": "2xl",
   "3XL": "3xl",
