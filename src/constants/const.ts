@@ -38,16 +38,14 @@ export const RADIUS = {
 export type RADIUS = (typeof RADIUS)[keyof typeof RADIUS];
 
 export const SHADOWS = {
-  XS: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
-  S: "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.08)",
-  M: "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 4px 8px 0px rgba(0, 0, 0, 0.10)",
-  L: "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 8px 16px rgba(0, 0, 0, 0.15)",
-  XL: "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 8px 16px rgba(0, 0, 0, 0.15)",
-  "2XL":
-    "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 16px 32px rgba(0, 0, 0, 0.15)",
-  "3XL":
-    "0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 24px 48px rgba(0, 0, 0, 0.15)",
-  FOCUS: "0px 0px 0px 3px rgba(0, 131, 235, 0.4)",
+  SM: "sm",
+  NORMAL: "normal",
+  MD: "md",
+  LG: "lg",
+  XL: "xl",
+  "2XL": "2xl",
+  "3XL": "3xl",
+  FOCUS: "focus",
 } as const;
 
 export type SHADOWS = (typeof SHADOWS)[keyof typeof SHADOWS];
