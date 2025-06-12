@@ -29,6 +29,7 @@ import {
 import Flex from "./components/Utils/Flex/Flex";
 import { Row, Column } from "./components/Utils/Flex/FlexContainers";
 import DropdownMenu from "./components/Utils/DropownMenu/DropdownMenu";
+import Overlay from "./components/Utils/Overlay/Overlay";
 
 import Accordion from "./components/BaseComponents/Accordion/Accordion";
 import Alert from "./components/BaseComponents/Alert/Alert";
@@ -76,6 +77,7 @@ export {
   DropdownMenu,
   Row,
   Column,
+  Overlay,
   Accordion,
   Alert,
   Avatar,
