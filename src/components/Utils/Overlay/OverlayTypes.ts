@@ -4,4 +4,5 @@ export interface OverlayProps {
   debugMode?: boolean;
   id?: string;
   isOpen?: boolean;
+  [key: string]: any;
 }
