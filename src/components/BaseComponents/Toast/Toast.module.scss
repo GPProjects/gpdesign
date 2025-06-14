@@ -6,7 +6,9 @@
   padding: var(--toast-padding-s);
   border-radius: var(--toast-border-radius);
   width: fit-content;
-  min-width: 500px;
+  min-width: 200px;
+  max-width: 300px;
+
   border-width: var(--toast-border-width);
   border-style: solid;
   border-color: var(--color-border200);
@@ -59,5 +61,10 @@
   transition: opacity 0.5s ease;
   &.fade-out {
     opacity: 0;
+  }
+
+  @media (min-width: 960px) {
+    min-width: 500px;
+    max-width: none;
   }
 }
