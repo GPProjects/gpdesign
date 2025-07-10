@@ -12,6 +12,8 @@ function isDialogFooterProps(props: DialogProps): props is DialogFooterProps {
   return props.footer === true;
 }
 
+// TO DO: redefine this component
+
 const Dialog = (props: DialogProps) => {
   const {
     className,
